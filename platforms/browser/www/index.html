@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<title>Hello World</title>
+</head>
+
+<body>
+	<!-- <div class="app"> -->
+		<section id="page" data-role="page">
+			<header data-role="header">
+				<h1>List View demo</h1>
+			</header><!-- /header -->
+			<article role="main" class="ui-content">
+				<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search ...">
+					<li><a href="#">Banana</a></li>
+					<li><a href="#">Apple</a></li>
+					<li><a href="#">Fruits</a></li>
+				</ul>
+				<p>Type the keyword to search. <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
+				<div data-role="popup" id="popupInfo"  
+				style="max-width:350;">
+				  <p>The result will displayed</p>
+			</div>
+			<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ...">
+				<li><a href="#">Banana</a></li>
+				<li><a href="#">Apple</a></li>
+				<li><a href="#">Fruits</a></li>
+			</ul>
+			<ul data-role="listview" data-inset="true">
+				<li data-icon="delete"><a href="#">Delete</a></li>
+				<li data-icon="gear"><a href="#">Gear</a></li>
+				<li data-icon="false"><a href="#">No icon</a></li>
+			</ul>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>Footer</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+<!-- </div> -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+	app.initialize();
+</script>
+</body>
+
+</html>
